@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@500&display=swap");
+
+.container1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 990px;
+    background-color: #03012C;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.register-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 0rem;
+
+}
+
+
+/* ********************* Heading ***************** */
+h1 {
+    margin: 40px;
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+
+
+
+input {
+    height: 50px;
+    width: 450px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border-color: none;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    caret-color: rgb(255, 255, 255);
+
+    /* padding-left: 10px; */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding-left: 14px;
+    border: 2px solid #d6d6d6;
+    /* color: white; */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+}
+
+
+input:focus {
+    font-size: 1.4rem;
+    transform: scale(1.04);
+    background-color: #FF506E;
+    color: white;
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+/* ***************  Image ***************** */
+.imageContainer {
+    grid-row-start: span 4;
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+
+}
+
+#img-input input {
+    display: none;
+}
+
+#image-label {
+    cursor: pointer;
+    padding: 16px;
+    background-color: #03012C;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    border-radius: 7px;
+
+}
+
+#image-label:hover {
+    background-color: #FF506E;
+}
+
+#preview {
+    display: none;
+}
+
+
+/************password***************************/
+.passwordTogel,
+.password-group {
+    position: relative;
+    display: inline-block;
+}
+
+.passwordTogel input,
+.password-group input {
+    padding-right: 20px;
+    /* Leave space for button */
+}
+
+
+.passwordTogel button,
+.password-group button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 4px;
+}
+
+
+
+.toggleBtn .BiHide,
+.toggleBtn .BiShow {
+    font-size: 20px;
+
+    /* set your desired icon size */
+    color: #03012C;
+    /* padding: 20px; */
+    /* set your desired icon color */
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+
+/* ********************  Category  ********************** */
+#input-box {
+    background-color: white;
+    width: 450px;
+    margin-left: 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    font-family: "Roboto Slab", serif;
+    color: #999;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+}
+
+#category {
+    border-radius: 4px;
+    border-color: none;
+    background-color: #03012C;
+    color: white;
+    margin-left: 14px;
+    padding: 4px;
+    cursor: pointer;
+
+}
+
+
+/* *******************   Gender   ****************** */
+.gender-details {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    width: 450px;
+    margin-left: 15px;
+    border-radius: 7px;
+    color: #999;
+    font-family: "Roboto Slab", serif;
+    /* font-size: 1px; */
+}
+
+.genderName {
+    font-size: 14px;
+}
+
+.gender1,
+.gender2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 14px;
+    height: 22px;
+    font-size: 14px;
+    background-color: #03012C;
+    padding: 14px;
+    border-radius: 4px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+
+#dot-1,
+#dot-2 {
+    width: 15px;
+    margin-left: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    accent-color: #FF506E;
+}
+
+
+
+/* ************  btn ****************** */
+.action-button {
+    margin-top: 25px;
+    grid-column-start: span 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

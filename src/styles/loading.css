@@ -1,0 +1,142 @@
+/* 
+
+.loaderDiv {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.DiAtom {
+    height: 80px;
+    width: 80px;
+    color: #5ad1cd;
+    opacity: 50;
+    position: absolute;
+    z-index: 999999999;
+
+    animation: animate 2s linear infinite;
+
+}
+
+
+
+.loader {
+    position: absolute;
+
+
+    z-index: 3;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #fa9884, #5ad1cd);
+    animation: animate 1.2s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: solid rgb(65, 65, 65) 10px;
+    border-radius: 50%;
+   
+    background-color: black;
+} */
+
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+} */
+
+.loading-loader {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-dotted li {
+    display: inline-block;
+    list-style: none;
+    height: 25px;
+    width: 25px;
+    background: #0fa;
+    border-radius: 100%;
+    margin: 0 0.2em;
+    animation: anm 1s linear infinite alternate;
+}
+
+@keyframes anm {
+    0% {
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.4);
+    }
+
+    100% {
+        transform: scale(0.1);
+        filter: hue-rotate(360deg);
+    }
+}

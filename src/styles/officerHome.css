@@ -1,0 +1,188 @@
+.officerHome nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #03012C;
+    color: white;
+}
+
+.officerHome-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.officerHome-nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.officerHome-nav-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    list-style-type: none;
+
+}
+
+.officerHome-nav-item.active {
+    /* background-color: #333; */
+    color: #FF506E;
+}
+
+.officerHome-nav-item:hover {
+    color: #FF506E;
+}
+
+.officerHome-sign-out-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.officerHome-sign-out-btn:hover,
+.officerHome-check-btn:hover {
+    background-color: #FF506E;
+    color: white;
+}
+
+.officerHome-check-btn {
+    background-color: aliceblue;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* .officerHome-check-btn-Link {
+    color: black;
+    text-decoration: none;
+}
+
+.officerHome-check-btn-Link:hover {
+    color: white;
+} */
+
+/* .officerHome-check-btn:hover{
+
+} */
+
+
+
+
+/* search */
+.officerHome-form {
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.officerHome-form input {
+    background-color: aliceblue;
+    caret-color: rgb(70, 70, 70);
+    height: 35px;
+    font-size: 12px;
+
+}
+
+.officerHome-form input[type="text"] {
+    padding-left: 30px;
+}
+
+.officerHome-form input[type="text"]::placeholder {
+    font-size: 12px;
+
+}
+
+
+.officerHome-form input:focus {
+    /* font-size: 1.4rem; */
+    transform: scale(1);
+    /* background-color: #FF506E; */
+    color: #03012C;
+    outline: none;
+}
+
+.officerHome-form input:focus::-webkit-input-placeholder {
+    color: #999;
+}
+
+
+
+
+
+.officerHome-form .AiOutlineSearch {
+    /* color: #999; */
+    width: 20px;
+    height: 20px;
+}
+
+/* Table styles */
+.officerHome-table {
+    width: -webkit-fill-available;
+    margin: 2rem;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+.officerHome-table-thead {
+    margin-bottom: 20px;
+}
+
+.officerHome-table th {
+    text-align: left;
+    background-color: aliceblue;
+    color: black;
+    padding: 1rem;
+}
+
+
+/* .officerHome-table td {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+} */
+
+.officerHome-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+}
+
+.officerHome-table td:first-child {
+    font-weight: bold;
+}
+
+.officerHome-form input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.approved-status {
+    background-color: #27ae60;
+    color: white;
+}
+
+.approved-status:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+.rejected-status {
+    background-color: #DC143C;
+    color: white;
+}
+
+.rejected-status:hover {
+    background-color: #DC143C;
+    color: white;
+}

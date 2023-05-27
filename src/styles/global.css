@@ -1,0 +1,19 @@
+html {
+    font-size: 10px;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('./register.css');
+@import url('./login.css');
+@import url('./loading.css');
+@import url('./toaster.css');
+@import url('./uploadDoc.css');
+@import url('./officerHome.css');
+@import url('./officerCheck.css');
+@import url('./officerProfile.css');
+@import url('./statuscheck.css');
