@@ -1,5 +1,7 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://labour-management-server.onrender.com';
+
 
 export const postDataAPI = async (url, post, token) => {
     const res = await axios.post(`${BASE_URL}/${url}`, post,

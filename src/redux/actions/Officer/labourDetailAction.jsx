@@ -16,7 +16,7 @@ export const OFFICER_TYPE = {
 export const getLabourList = (token) => async (dispatch) => {
     try {
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
-        const res = await getDataAPI('/officer/labourList', token)
+        const res = await getDataAPI('officer/labourList', token)
 
         dispatch({
             type: OFFICER_TYPE.GET_LABOURS_DETAIL,
@@ -40,7 +40,7 @@ export const getLabourListBySearch = (token, search) => async (dispatch) => {
     try {
 
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
-        const res = await postDataAPI('/officer/get_labour_list_by_search', { search }, token)
+        const res = await postDataAPI('officer/get_labour_list_by_search', { search }, token)
 
         dispatch({
             type: OFFICER_TYPE.GET_LABOURS_DETAIL,
@@ -66,8 +66,8 @@ export const getLabourDocs = ({ id, auth }) => async (dispatch) => {
     try {
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await getDataAPI(`/officer/get_labour_docs_by_id/${id}`, auth.token)
-        const res1 = await getDataAPI(`/officer/get_labour_info_by_id/${id}`, auth.token)
+        const res = await getDataAPI(`officer/get_labour_docs_by_id/${id}`, auth.token)
+        const res1 = await getDataAPI(`officer/get_labour_info_by_id/${id}`, auth.token)
 
 
         const labourDoc = res;
@@ -103,7 +103,7 @@ export const updateDocStatus = ({ id, auth, docStatus }) => async (dispatch) => 
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
 
 
-        const res = await putDataAPI('/officer/update_labour_doc_status', { id, docStatus }, auth.token)
+        const res = await putDataAPI('officer/update_labour_doc_status', { id, docStatus }, auth.token)
 
 
 
@@ -128,7 +128,7 @@ export const getAcceptedLabourList = (token, search) => async (dispatch) => {
     try {
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await postDataAPI('/officer/get_approved_labour_list', { search }, token)
+        const res = await postDataAPI('officer/get_approved_labour_list', { search }, token)
 
 
         dispatch({
@@ -152,7 +152,7 @@ export const getRejectedLabourList = (token, search) => async (dispatch) => {
     try {
         dispatch({ type: OFFICER_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await postDataAPI('/officer/get_rejected_labour_list', { search }, token)
+        const res = await postDataAPI('officer/get_rejected_labour_list', { search }, token)
 
 
         dispatch({

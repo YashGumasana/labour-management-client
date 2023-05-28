@@ -47,7 +47,7 @@ export const register = ({ userData, profile }) => async (dispatch) => {
         const user = Object.keys(userStatus).find(
             (key) => userStatus[key] === userDataWithoutConfirmPassword.category
         )
-        const res = await postDataAPI(`/user/register`, userDataWithoutConfirmPassword)
+        const res = await postDataAPI(`user/register`, userDataWithoutConfirmPassword)
         // console.log('register res', res);
 
 
@@ -73,7 +73,7 @@ export const register = ({ userData, profile }) => async (dispatch) => {
 export const login = (userData, category) => async (dispatch) => {
     try {
         dispatch({ type: GLOBALTYPES.ALERT, payload: { loading: true } })
-        const res = await postDataAPI(`/user/login`, userData)
+        const res = await postDataAPI(`user/login`, userData)
 
         dispatch({
             type: GLOBALTYPES.AUTH,

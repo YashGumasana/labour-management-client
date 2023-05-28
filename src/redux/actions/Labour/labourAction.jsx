@@ -18,7 +18,7 @@ export const getJobList = (token) => async (dispatch) => {
     try {
         dispatch({ type: LABOUR_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await getDataAPI('/labour/get_job_list', token)
+        const res = await getDataAPI('labour/get_job_list', token)
 
         dispatch({
             type: LABOUR_TYPE.GET_JOBS_DETAIL,
@@ -42,7 +42,7 @@ export const updateJobById = (token, jobId) => async (dispatch) => {
     try {
         dispatch({ type: LABOUR_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await putDataAPI('/labour/update_job_by_id', { jobId }, token)
+        const res = await putDataAPI('labour/update_job_by_id', { jobId }, token)
 
         dispatch({
             type: GLOBALTYPES.ALERT,
@@ -66,7 +66,7 @@ export const getAppliedJobList = (token) => async (dispatch) => {
     try {
         dispatch({ type: LABOUR_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await getDataAPI('/labour/get_applied_job', token)
+        const res = await getDataAPI('labour/get_applied_job', token)
 
 
         console.log("getAppliedJobList res", res);
@@ -95,7 +95,7 @@ export const get_detail_labourDocs = (token) => async (dispatch) => {
         console.log("----------------------******");
         dispatch({ type: LABOUR_TYPE.LOADING, payload: { loading: true } })
 
-        const res = await getDataAPI('/labour/get_detail_labourDocs', token)
+        const res = await getDataAPI('labour/get_detail_labourDocs', token)
 
         console.log("res get_detail_labourDocs", res);
 
