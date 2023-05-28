@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import Loading from '../../components/alert/Loading'
 import { getAppliedJobList } from '../../redux/actions/Labour/labourAction'
 import { useDispatch, useSelector } from 'react-redux'

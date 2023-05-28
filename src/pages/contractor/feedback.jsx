@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import { AiTwotoneEye, AiTwotoneEyeInvisible } from 'react-icons/ai'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { feedback_for_labour_by_contractor } from '../../redux/actions/Contractor/contractor'
 
 const Feedback = () => {
 
     const initialState = { userId: '', tenure: '', remark: '' }
-    const { auth, alert } = useSelector(state => state)
+    const { auth, } = useSelector(state => state)
     const dispatch = useDispatch()
 
     const [feedBackData, setFeedBackDataData] = useState(initialState)

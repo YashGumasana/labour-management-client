@@ -1,5 +1,4 @@
-import { postDataAPI, postFileAPI } from "../../../utils/fetchData";
-import { imageUpload } from "../../../utils/imageUpload";
+import { postFileAPI } from "../../../utils/fetchData";
 import { GLOBALTYPES } from "../globalTypes";
 
 export const uploadDoc = ({ documentPhoto, auth }) => async (dispatch) => {

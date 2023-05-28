@@ -1,4 +1,3 @@
-import { documentStatus } from "../../../common"
 import { getDataAPI, postDataAPI, putDataAPI } from "../../../utils/fetchData"
 import { GLOBALTYPES } from "../globalTypes"
 

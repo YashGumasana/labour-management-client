@@ -1,6 +1,4 @@
 import React from 'react'
-import { DiReact } from "react-icons/di";
-// import loadingImage from '../../images/loading.jpeg'
 
 const Loading = () => {
     return (
@@ -13,15 +11,7 @@ const Loading = () => {
                 <li ></li>
             </div>
         </div>
-        // <div className='loaderDiv'>
-        //     <DiReact className='DiAtom' />
-        //     <div className="loader">
-        //         <span></span>
-        //         <span></span>
-        //         <span></span>
-        //         <span></span>
-        //     </div>
-        // </div>
+
 
     )
 }

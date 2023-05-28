@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { GLOBALTYPES } from '../redux/actions/globalTypes';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { logout } from '../redux/actions/authAction';
 
 const LabourNavbar = () => {
-    //   const { auth } = useSelector(state => state);
     const dispatch = useDispatch()
 
     useEffect(() => {

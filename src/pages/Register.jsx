@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { genderStatus, userStatus } from '../common'
 import { register } from '../redux/actions/authAction'
 import { GLOBALTYPES } from '../redux/actions/globalTypes'
 import { checkImage } from '../utils/imageUpload'
-import { BiHide, BiShow } from 'react-icons/bi';
 import { AiTwotoneEyeInvisible, AiTwotoneEye } from 'react-icons/ai';
 import { Button } from 'react-bootstrap';
 
@@ -36,7 +35,7 @@ const Register = () => {
     };
     const [profile, setProfile] = useState('')
 
-    const { userName, fullName, email, phoneNumber, password, confirmPassword, category, gender } = userData
+    const { userName, fullName, email, phoneNumber, password, confirmPassword, gender } = userData
 
 
 

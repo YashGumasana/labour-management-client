@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 import Loading from '../../components/alert/Loading'
-import { Link } from 'react-router-dom'
 import { documentName } from '../../common'
 
 const Approved = () => {

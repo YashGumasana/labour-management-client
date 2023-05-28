@@ -1,8 +1,6 @@
-import { useSelector } from "react-redux"
-import { useNavigate } from "react-router-dom"
 import { userStatus } from "../../common"
 import { postDataAPI } from "../../utils/fetchData"
-import { fileUpload, imageUpload } from "../../utils/imageUpload"
+import { imageUpload } from "../../utils/imageUpload"
 import { GLOBALTYPES } from "./globalTypes"
 import { valid } from "../../utils/valid"
 

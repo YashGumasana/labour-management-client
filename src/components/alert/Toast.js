@@ -56,7 +56,7 @@ class SaberToast {
 
         const existingToast = document.querySelector('.saber-toast');
         if (existingToast) {
-            const { title, text, delay, duration, rtl, position } = { title: "", text: "", delay: 200, duration: 2600, position: "bottom-right", ...params }
+            const { title, text } = { title: "", text: "", delay: 200, duration: 2600, position: "bottom-right", ...params }
             const titleEl = existingToast.querySelector('.title');
             const textEl = existingToast.querySelector('.text');
             titleEl.textContent = title;
@@ -65,7 +65,7 @@ class SaberToast {
         }
 
 
-        const { title, text, delay, duration, rtl, position } = { title: "", text: "", delay: 200, duration: 2600, position: "bottom-right", ...params }
+        const { title, text, delay, duration, position } = { title: "", text: "", delay: 200, duration: 2600, position: "bottom-right", ...params }
 
         const div = document.createElement('div')
         div.classList.add('saber-toast')

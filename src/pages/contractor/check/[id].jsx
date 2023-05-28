@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getLabourDocs, updateDocStatus } from '../../../redux/actions/Officer/labourDetailAction'
 import Loading from '../../../components/alert/Loading'
 import { useNavigate, useParams } from 'react-router-dom'
-import { documentStatus } from '../../../common'
-import { GLOBALTYPES } from '../../../redux/actions/globalTypes'
 import { get_labour_data } from '../../../redux/actions/Contractor/contractor'
 
 

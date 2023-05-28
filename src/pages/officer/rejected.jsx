@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getAcceptedLabourList, getRejectedLabourList, } from '../../redux/actions/Officer/labourDetailAction'
+import { getRejectedLabourList, } from '../../redux/actions/Officer/labourDetailAction'
 import { useDispatch, useSelector } from 'react-redux'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
@@ -49,6 +49,7 @@ const Rejected = () => {
                                             <td>{data.userId}</td>
 
                                             <td>{
+                                                // eslint-disable-next-line array-callback-return
                                                 data.docStatus[0].docStatus.map((dStatus, key) => {
                                                     if (dStatus === 2) {
                                                         return `${documentName[key]},`;
