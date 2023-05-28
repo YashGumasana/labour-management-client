@@ -1,6 +1,6 @@
 import axios from 'axios'
 // const BASE_URL = 'http://localhost:3000';
-const BASE_URL = 'https://labour-management-server.onrender.com';
+const BASE_URL = 'https://network-denz.onrender.com';
 
 
 export const postDataAPI = async (url, post, token) => {
