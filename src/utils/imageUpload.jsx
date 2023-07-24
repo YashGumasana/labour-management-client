@@ -57,10 +57,8 @@ export const imageUpload = async (images) => {
             formData.append("file", item)
         }
 
-        formData.append("upload_preset", "qfpmvyxn")  // chnage the preset for uploading in others folder
-        // formData.append("cloud_name", "dkqimhvk8")
-
-        const res = await fetch("https://api.cloudinary.com/v1_1/dkqimhvk8/upload", {
+        formData.append("upload_preset", "") 
+        const res = await fetch("", {
             method: "POST",
             body: formData
         })
